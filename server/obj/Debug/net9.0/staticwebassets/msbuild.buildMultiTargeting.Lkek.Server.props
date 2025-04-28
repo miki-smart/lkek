@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Lkek.Server.props" />
+</Project>
