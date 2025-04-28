@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Virtual Try-On</h1>
+  <mat-card>
+    <mat-card-content>
+      <div>
+        <label>Portrait Image</label>
+        <input type="file" (change)="onFileSelected($event, 'portrait')" accept="image/*">
+      </div>
+      <div>
+        <label>Outfit Image</label>
+        <input type="file" (change)="onFileSelected($event, 'outfit')" accept="image/*">
+      </div>
+      <button mat-raised-button color="primary" (click)="generateTryOn()" [disabled]="!portrait || !outfit">
+        Generate Try-On
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
